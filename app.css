@@ -1,0 +1,20 @@
+#container{
+    margin: 20px auto;
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards{
+    position:relative;
+    width: 20%;
+    padding: 20px 5px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    z-index: 1;
+}
