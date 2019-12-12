@@ -28,10 +28,17 @@ var cards = [
     }
 ];
 shuffle(cards);
-
+var cardsDiv;
+var container=document.getElementById("container");
+var img;
 for (var card of cards) {
     // card.reveal();
-
+    cardsDiv=document.createElement("div");
+    img=document.createElement("img");
+    cardsDiv.className="cards";
+    container.appendChild(cardsDiv);
+    cardsDiv.appendChild(img);
+    img.src=backImg;
 }
 
 function shuffle(array) {
