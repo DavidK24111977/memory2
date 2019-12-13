@@ -1,26 +1,84 @@
 *{
     box-sizing: border-box;
 }
+body{
+    font-family: 'Jura', sans-serif;
+}
 #container{
     margin: 20px auto;
     width: 1024px;
+
+}
+#game{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .cards{
     position:relative;
-    width: 25%;
+    width: 23%;
     padding: 5px 5px;
-    /*background-color: #222;*/
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     cursor: pointer;
     z-index: 1;
+
 }
 .cards img{
     width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+#message, #essai, #title{
+
+    font-size: 1.4em;
+    text-align: center;
+    background-color: #282a59;
+    border: 2px solid #111433;
+    color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+#cache{
+    display: none;
+}
+#replay{
+    cursor: pointer;
+    margin: 20px auto;
+    width: 100px;
+    padding: 10px;
+    background-color: #282a59;
+    border: 2px solid #111433;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+#replay:hover{
+    background-color: #111433;
+}
+
+@media screen and (max-width: 1024px) {
+    #container{
+        width: 860px;
+    }
+}
+@media screen and (max-width: 860px) {
+    #container{
+        width: 100%;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .cards{
+        width: 50%;
+    }
 }
